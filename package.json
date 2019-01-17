@@ -1,0 +1,25 @@
+{
+  "name": "study",
+  "version": "1.0.0",
+  "description": "用于node文档学习",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0227vera/node-.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "express",
+    "mysql"
+  ],
+  "author": "廖轩",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0227vera/node-/issues"
+  },
+  "homepage": "https://github.com/0227vera/node-#readme"
+}
