@@ -39,4 +39,5 @@ server.use(expressStatic('./www'))
 // express框架
 // 依赖中间键
 // 接收请求 get post use
-// 
+// 非破坏式的
+// static用法
