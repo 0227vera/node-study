@@ -1,3 +1,0 @@
-# 使用nodejs搭建一个最简单的服务器
-
-使用nodejs自带的模块http
