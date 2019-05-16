@@ -18,3 +18,15 @@ server.get('./index', (req,res) => {
 
 })
 ```
+
+> 路由 router (Mimi版的小server) 子服务
+* 目的就是为了把服务拆分
+```
+let routerA = express.Router()
+routerA.get('/1.html',(req,res) => {
+  res.send('111')
+})
+server.use('/A',routerA)
+
+
+```
