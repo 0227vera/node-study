@@ -37,6 +37,7 @@ server.use('/file', (req,res) => {
         res.send({success:true,data:'上传成功'})
       }
     })
+    // fs.unlink() 删除文件
   })
 })
 
