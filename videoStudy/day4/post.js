@@ -6,6 +6,7 @@ http.createServer((req,res) => {
     let GET = urlLib.parse(req.url, true).query;
     let POST= {}
     let str = ''
+    // 有一段数据到达就会触发一次
     req.on('data',(data) => {
         str +=data
     })
