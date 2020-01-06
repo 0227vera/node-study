@@ -15,7 +15,7 @@ let db = mysql.createConnection({ // 连接
 db.query('SELECT * FROM `user_table`;', (err, data) => {
   if (err) {
     throw err
-  } else { 
+  } else {
     console.log('--------->', JSON.stringify(data))
   }
 });

@@ -20,14 +20,6 @@ function randomWord(randomFlag, min, max) {
   }
   return str;
 }
-
-
-//产生一个hash值，取后面的8位放在前面也是为了唯一性
-// function hashCode(str) {
-//   var len = str.length;
-//   return str.slice(0, 6) + str.slice(len - 2, len) + str.slice(6, 12) + str.slice(len - 4, len-2) + str.slice(12, 18) + str.slice(len - 6, len-4) + str.slice(18, 24) + str.slice(len - 8, len-6);
-// }
-
 //获取hashcode
 module.exports =  function gethashcode() {
   //定义一个时间戳，用来获得唯一时间 可以保证hash码是唯一的
@@ -36,3 +28,11 @@ module.exports =  function gethashcode() {
   // var hashcode = hashCode(myRandom + timestamp.toString());
   return myRandom;
 }
+let test = () => {
+  //定义一个时间戳，用来获得唯一时间 可以保证hash码是唯一的
+  var timestamp = (new Date()).valueOf();
+  var myRandom = randomWord(true, 16, 24);
+  var hashcode = myRandom.slice(0,8)+ timestamp + myRandom.slice(-8,0)
+  return hashcode;
+}
+console.log(test())

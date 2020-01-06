@@ -1,5 +1,5 @@
 const test = require('./md5')
-console.error(test.md5('112222'))
+console.error(test.md5('adminlogin'))
 
 // Peomise ----- 解决异步操作
 
